@@ -5,10 +5,12 @@ import { InjectableRxStompConfig, RxStompService, rxStompServiceFactory } from '
 
 import { AppComponent } from './app.component';
 import { myRxStompConfig } from './my-rx-stomp.config';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule
