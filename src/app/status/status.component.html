@@ -1,0 +1,7 @@
+<div id="status">
+  <div id="indicator" class="{{connectionStatus$|async}}"></div>
+  <span>{{connectionStatus$|async}}</span>
+  <button class="btn" (click)="rxStompService.activate()">Activate</button>
+  <button class="btn" (click)="rxStompService.deactivate()">DeActivate</button>
+  <button class="btn" (click)="rxStompService.stompClient.forceDisconnect()">Simulate Error</button>
+</div>
