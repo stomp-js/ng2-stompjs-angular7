@@ -23,7 +23,7 @@ div.CLOSED#indicator {
 }
 
 div.CONNECTING#indicator, div.CLOSING#indicator {
-    background: yellow;
+    background: #ffbf00;
 }
 
 div.OPEN#indicator {
