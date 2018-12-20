@@ -9,16 +9,13 @@ import {RxStompState} from '@stomp/rx-stomp';
   templateUrl: './status.component.html',
   styleUrls: ['./status.component.css']
 })
-export class StatusComponent implements OnInit {
+export class StatusComponent {
   public connectionStatus$: Observable<string>;
 
   constructor(public rxStompService: RxStompService) {
     this.connectionStatus$ = rxStompService.connectionState$.pipe(map((state) => {
+      // convert numeric RxStompState to string
       return RxStompState[state];
     }));
   }
-
-  ngOnInit() {
-  }
-
 }
