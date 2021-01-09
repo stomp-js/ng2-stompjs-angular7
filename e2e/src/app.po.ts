@@ -5,7 +5,15 @@ export class AppPage {
     return browser.get('/');
   }
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+  getStatusLabel() {
+    return element(by.id('status-label'));
+  }
+
+  getMessageNode() {
+    return element(by.css('#messages ol li.message'));
+  }
+
+  getSendMessageBtn() {
+    return element(by.css('#messages button'));
   }
 }
