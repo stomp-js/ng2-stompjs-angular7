@@ -8,7 +8,7 @@ export const myRxStompConfig: InjectableRxStompConfig = {
   // Typical keys: login, passcode, host
   connectHeaders: {
     login: 'guest',
-    passcode: 'guest'
+    passcode: 'guest',
   },
 
   // How often to heartbeat?
@@ -26,5 +26,5 @@ export const myRxStompConfig: InjectableRxStompConfig = {
   // Skip this key to stop logging to console
   debug: (msg: string): void => {
     console.log(new Date(), msg);
-  }
+  },
 };
