@@ -19,7 +19,7 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
-    "@stomp/logger": "0.0.2",
+    "@stomp/logger": "0.0.4",
     "@stomp/ng2-stompjs": "^8.0.0",
     "core-js": "^2.5.4",
     "prettier": "^2.2.1",

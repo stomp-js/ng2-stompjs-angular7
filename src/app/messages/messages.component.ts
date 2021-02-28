@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { RxStompService } from '@stomp/ng2-stompjs';
 import { Message } from '@stomp/stompjs';
 import { Subscription } from 'rxjs';
-import {LoggerService} from '@stomp/logger';
+import { LoggerService } from '../services/logger-service';
 
 @Component({
   selector: 'app-messages',
@@ -13,7 +13,10 @@ export class MessagesComponent implements OnInit, OnDestroy {
   public receivedMessages: string[] = [];
   private topicSubscription: Subscription;
 
-  constructor(private rxStompService: RxStompService, private logger: LoggerService) {}
+  constructor(
+    private rxStompService: RxStompService,
+    private logger: LoggerService
+  ) {}
 
   ngOnInit() {
     this.topicSubscription = this.rxStompService
